@@ -1057,7 +1057,7 @@ MonoBehaviour:
   _verifyStatues: {fileID: 796001400}
   currentOrientation: 0
   startOrientation: 0
-  rotateSound: {fileID: 371574913}
+  rotateSound: {fileID: 0}
 --- !u!82 &371574912
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1574,12 +1574,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faces:
-  - {fileID: 919132149348381859}
-  - {fileID: 1923625302}
-  - {fileID: 2113189580}
-  - {fileID: 1736706233}
-  - {fileID: 281687402}
-  - {fileID: 1850483711}
+  - {fileID: 40279673}
+  - {fileID: 740782676}
+  - {fileID: 1546486336}
+  - {fileID: 510266201}
+  - {fileID: 894422281}
+  - {fileID: 973955337}
   isInFocusMode: 0
 --- !u!4 &493020974
 Transform:
@@ -1987,7 +1987,7 @@ MonoBehaviour:
   _verifyStatues: {fileID: 796001400}
   currentOrientation: 0
   startOrientation: 0
-  rotateSound: {fileID: 662003555}
+  rotateSound: {fileID: 0}
 --- !u!65 &662003554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4014,7 +4014,7 @@ MonoBehaviour:
   _verifyStatues: {fileID: 796001400}
   currentOrientation: 0
   startOrientation: 0
-  rotateSound: {fileID: 1196267065}
+  rotateSound: {fileID: 0}
 --- !u!65 &1196267063
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5824,7 +5824,7 @@ MonoBehaviour:
   _verifyStatues: {fileID: 796001400}
   currentOrientation: 0
   startOrientation: 0
-  rotateSound: {fileID: 1727446854}
+  rotateSound: {fileID: 0}
 --- !u!65 &1727446852
 BoxCollider:
   m_ObjectHideFlags: 0
