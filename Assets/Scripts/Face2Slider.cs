@@ -37,14 +37,30 @@ public class Face2Slider : MonoBehaviour
         Vector3 camPos = Camera.main.ScreenToWorldPoint(Input.mousePosition - mousePosition);
         // if (camPos.x > transform.position.x)
             
-        if (gameObject.CompareTag("HSlider")
+        if (gameObject.CompareTag("XSliderDown")
             && camPos.x < transform.position.x
             && !isColliding)
             transform.position = new Vector3(camPos.x, transform.position.y, transform.position.z);
-        else if (gameObject.CompareTag("VSlider")
+        if (gameObject.CompareTag("XSliderUp")
             && camPos.x > transform.position.x
             && !isColliding)
             transform.position = new Vector3(camPos.x, transform.position.y, transform.position.z);
+        if (gameObject.CompareTag("YSliderDown")
+            && camPos.y < transform.position.y
+            && !isColliding)
+            transform.position = new Vector3(transform.position.x, camPos.y, transform.position.z);
+        if (gameObject.CompareTag("YSliderUp")
+            && camPos.y > transform.position.y
+            && !isColliding)
+            transform.position = new Vector3(transform.position.x, camPos.y, transform.position.z);
+        if (gameObject.CompareTag("ZSliderDown")
+            && camPos.z < transform.position.z
+            && !isColliding)
+            transform.position = new Vector3(transform.position.x, transform.position.y, camPos.z);
+        if (gameObject.CompareTag("ZSliderUp")
+            && camPos.y > transform.position.y
+            && !isColliding)
+            transform.position = new Vector3(transform.position.x, transform.position.y, camPos.z);
     }
 
     private void OnTriggerEnter(Collider other)

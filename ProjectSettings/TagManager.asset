@@ -16,6 +16,12 @@ TagManager:
   - Star
   - Constel
   - StarsConst
+  - XSliderDown
+  - XSliderUp
+  - YSliderDown
+  - YSliderUp
+  - ZSliderDown
+  - ZSliderUp
   layers:
   - Default
   - TransparentFX
