@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 [Serializable]
 public class KeyValuePairC {
@@ -13,6 +14,7 @@ public class FacesHandler : MonoBehaviour
 {
     private Dictionary<int, GameObject> faceDict = new Dictionary<int, GameObject>();
     public GameObject[] faces;
+    public bool isInFocusMode;
 
     void Start()
     {
@@ -23,13 +25,12 @@ public class FacesHandler : MonoBehaviour
     }
 
     public void DeactivateOtherFaces(int id) {
-        Debug.Log(id);
         foreach(KeyValuePair<int, GameObject> entry in faceDict)
         {
             if (entry.Key != id){
                 entry.Value.SetActive(false);
             }
-            else
+            else if (entry.Key == id)
                 entry.Value.SetActive(true);
         }
     }
@@ -40,5 +41,7 @@ public class FacesHandler : MonoBehaviour
         {
             entry.Value.SetActive(false);
         }
+
+        // shouldActivateFaces = false;
     }
 }

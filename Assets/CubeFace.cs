@@ -1,10 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CubeFace : MonoBehaviour
 {
-    private bool isInFocusMode;
+    private bool startTimer;
+    private float timePressed;
 
 
     public GameObject camera;
@@ -12,25 +14,51 @@ public class CubeFace : MonoBehaviour
     public int id;
 
     void OnMouseEnter(){
-        if(!isInFocusMode){
+        if (!facesHandler.isInFocusMode)
+        {
             facesHandler.DeactivateOtherFaces(id);
         }
     }
-     void OnMouseExit(){
+     void OnMouseExit()
+     {
         facesHandler.DeactivateFaces();
     }
+     
+    void OnMouseDown()
+    {
+        startTimer = true;
+    }
 
-
-    void OnMouseDown(){
-        isInFocusMode = true;
-        Debug.Log("Click deteced");
-        camera.SetActive(true);
+    private void OnMouseUp()
+    {
+        startTimer = false;
+        if (timePressed < .2f)
+        {
+            facesHandler.isInFocusMode = true;
+            camera.SetActive(true);
+        }
+        else
+        {
+            facesHandler.isInFocusMode = false;
+        }
+        timePressed = 0f;
     }
 
     void Update(){
-        if(Input.GetMouseButtonDown(3) && isInFocusMode){
+        // if(Input.GetMouseButtonDown(3) && facesHandler.isInFocusMode){
+        //     camera.SetActive(false);
+        //     facesHandler.isInFocusMode = false;
+        // }
+
+        if (startTimer)
+        {
+            timePressed += Time.deltaTime;
+        }
+
+        if (facesHandler.isInFocusMode && Input.GetMouseButtonDown(1))
+        {
             camera.SetActive(false);
-            isInFocusMode = false;
+            facesHandler.isInFocusMode = false;
         }
     }
    
