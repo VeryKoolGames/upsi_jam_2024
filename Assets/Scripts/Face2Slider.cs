@@ -2,11 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class Face2Slider : MonoBehaviour
 {
     [SerializeField] private Animator playerAnim; // https://www.youtube.com/watch?v=JS4k_lwmZHk
     [SerializeField] private string triggerName;
+    
     private Vector3 mousePosition;
     private Vector3 originalPosition;
     private bool isColliding;
@@ -20,25 +22,30 @@ public class Face2Slider : MonoBehaviour
     {
         mousePosition = Input.mousePosition - GetMousePos();
         originalPosition = transform.position;
+        GetComponent<AudioSource>().Play();
     }
     
     void OnMouseUp()
     {
         if (!isColliding)
             transform.position = originalPosition;
+        GetComponent<AudioSource>().Stop();
     }
 
     private void OnMouseDrag()
     {
+        Debug.Log("slidiiin");
         Vector3 camPos = Camera.main.ScreenToWorldPoint(Input.mousePosition - mousePosition);
+        if (camPos.x > transform.position.x)
+            
         if (gameObject.CompareTag("HSlider")
             && camPos.x < transform.position.x
             && !isColliding)
             transform.position = new Vector3(camPos.x, transform.position.y, transform.position.z);
         else if (gameObject.CompareTag("VSlider")
-            && camPos.y > transform.position.y
+            && camPos.x > transform.position.x
             && !isColliding)
-            transform.position = new Vector3(transform.position.x, camPos.y, transform.position.z);
+            transform.position = new Vector3(camPos.x, transform.position.y, transform.position.z);
     }
 
     private void OnTriggerEnter(Collider other)
