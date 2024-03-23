@@ -392,7 +392,7 @@ MonoBehaviour:
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
-    m_Time: 2
+    m_Time: 1
     m_CustomCurve:
       serializedVersion: 2
       m_Curve: []
@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 281687405}
   - component: {fileID: 281687404}
   m_Layer: 0
-  m_Name: OverlayMesh5
+  m_Name: OverlayMesh1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -808,6 +808,7 @@ MonoBehaviour:
   - {fileID: 1736706233}
   - {fileID: 281687402}
   - {fileID: 1850483711}
+  isInFocusMode: 0
 --- !u!4 &493020974
 Transform:
   m_ObjectHideFlags: 0
@@ -2070,7 +2071,7 @@ GameObject:
   - component: {fileID: 1736706236}
   - component: {fileID: 1736706235}
   m_Layer: 0
-  m_Name: OverlayMesh4
+  m_Name: OverlayMesh1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2153,7 +2154,7 @@ GameObject:
   - component: {fileID: 1850483713}
   - component: {fileID: 1850483712}
   m_Layer: 0
-  m_Name: OverlayMesh6
+  m_Name: OverlayMesh1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2236,7 +2237,7 @@ GameObject:
   - component: {fileID: 1923625305}
   - component: {fileID: 1923625304}
   m_Layer: 0
-  m_Name: OverlayMesh2
+  m_Name: OverlayMesh1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2705,7 +2706,7 @@ GameObject:
   - component: {fileID: 2113189583}
   - component: {fileID: 2113189582}
   m_Layer: 0
-  m_Name: OverlayMesh3
+  m_Name: OverlayMesh1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
