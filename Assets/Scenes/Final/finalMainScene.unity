@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 75334668}
   - component: {fileID: 75334671}
   - component: {fileID: 75334670}
+  - component: {fileID: 75334672}
   m_Layer: 0
   m_Name: Mesh
   m_TagString: Untagged
@@ -278,6 +279,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75334667}
   m_Mesh: {fileID: -5495902117074765545, guid: d9659c17c01c745b48e9f24c8e29c648, type: 3}
+--- !u!114 &75334672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75334667}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a8b836c1ab540b791a8818a9e4aa7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PCRotationSpeed: 10
+  MobileRotationSpeed: 0.4
+  cubeTransform: {fileID: 0}
+  facesHandler: {fileID: 0}
+  cam: {fileID: 233598940}
 --- !u!1 &233598938
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,6 +601,7 @@ GameObject:
   - component: {fileID: 359649075}
   - component: {fileID: 359649076}
   - component: {fileID: 359649077}
+  - component: {fileID: 359649078}
   m_Layer: 0
   m_Name: 4
   m_TagString: face
@@ -671,6 +690,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &359649078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359649070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a8b836c1ab540b791a8818a9e4aa7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PCRotationSpeed: 10
+  MobileRotationSpeed: 0.4
+  cubeTransform: {fileID: 1654963201}
+  facesHandler: {fileID: 493020973}
+  cam: {fileID: 233598940}
 --- !u!1 &361180343
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +720,7 @@ GameObject:
   - component: {fileID: 361180348}
   - component: {fileID: 361180349}
   - component: {fileID: 361180350}
+  - component: {fileID: 361180351}
   m_Layer: 0
   m_Name: 2
   m_TagString: face
@@ -772,6 +809,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &361180351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361180343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a8b836c1ab540b791a8818a9e4aa7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PCRotationSpeed: 10
+  MobileRotationSpeed: 0.4
+  cubeTransform: {fileID: 1654963201}
+  facesHandler: {fileID: 493020973}
+  cam: {fileID: 233598940}
 --- !u!1 &493020972
 GameObject:
   m_ObjectHideFlags: 0
@@ -1430,6 +1484,7 @@ GameObject:
   - component: {fileID: 1438021623}
   - component: {fileID: 1438021624}
   - component: {fileID: 1438021625}
+  - component: {fileID: 1438021626}
   m_Layer: 0
   m_Name: 5
   m_TagString: face
@@ -1518,6 +1573,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1438021626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438021618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a8b836c1ab540b791a8818a9e4aa7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PCRotationSpeed: 10
+  MobileRotationSpeed: 0.4
+  cubeTransform: {fileID: 1654963201}
+  facesHandler: {fileID: 493020973}
+  cam: {fileID: 233598940}
 --- !u!1 &1470890131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1603,6 +1675,7 @@ GameObject:
   - component: {fileID: 1500551172}
   - component: {fileID: 1500551173}
   - component: {fileID: 1500551174}
+  - component: {fileID: 1500551175}
   m_Layer: 0
   m_Name: 3
   m_TagString: face
@@ -1691,6 +1764,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1500551175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500551167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a8b836c1ab540b791a8818a9e4aa7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PCRotationSpeed: 10
+  MobileRotationSpeed: 0.4
+  cubeTransform: {fileID: 1654963201}
+  facesHandler: {fileID: 493020973}
+  cam: {fileID: 233598940}
 --- !u!1 &1501766466
 GameObject:
   m_ObjectHideFlags: 3
@@ -2321,6 +2411,7 @@ GameObject:
   - component: {fileID: 1944637463}
   - component: {fileID: 1944637464}
   - component: {fileID: 1944637465}
+  - component: {fileID: 1944637466}
   m_Layer: 0
   m_Name: 6
   m_TagString: face
@@ -2409,6 +2500,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1944637466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944637458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a8b836c1ab540b791a8818a9e4aa7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PCRotationSpeed: 10
+  MobileRotationSpeed: 0.4
+  cubeTransform: {fileID: 1654963201}
+  facesHandler: {fileID: 493020973}
+  cam: {fileID: 233598940}
 --- !u!1 &2002107876
 GameObject:
   m_ObjectHideFlags: 3
@@ -2790,6 +2898,7 @@ GameObject:
   - component: {fileID: 2121960174}
   - component: {fileID: 2121960175}
   - component: {fileID: 2121960176}
+  - component: {fileID: 2121960177}
   m_Layer: 0
   m_Name: 1
   m_TagString: face
@@ -2878,6 +2987,23 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2121960177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121960169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58a8b836c1ab540b791a8818a9e4aa7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PCRotationSpeed: 10
+  MobileRotationSpeed: 0.4
+  cubeTransform: {fileID: 1654963201}
+  facesHandler: {fileID: 493020973}
+  cam: {fileID: 233598940}
 --- !u!4 &543450653540576793
 Transform:
   m_ObjectHideFlags: 0
