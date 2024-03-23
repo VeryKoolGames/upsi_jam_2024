@@ -13,6 +13,7 @@ public class RotateCube : MonoBehaviour
     private void OnMouseDrag()
     {
         if (!InputManager.Instance.inputEnabled) return;
+        if (facesHandler.isInFocusMode) return;
         facesHandler.DeactivateFaces();
         facesHandler.isInFocusMode = true;
         float rotx = Input.GetAxis("Mouse X") * PCRotationSpeed;
@@ -27,6 +28,7 @@ public class RotateCube : MonoBehaviour
     private void Update()
     {
         if (!InputManager.Instance.inputEnabled) return;
+        if (facesHandler.isInFocusMode) return;
         foreach (Touch touch in Input.touches)
         {
             Ray camRay = cam.ScreenPointToRay(touch.position);

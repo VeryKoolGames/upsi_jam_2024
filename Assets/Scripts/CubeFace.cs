@@ -40,6 +40,7 @@ public class CubeFace : MonoBehaviour
         if (timePressed < .2f)
         {
             camera.SetActive(true);
+            facesHandler.DeactivateColliders();
             StartCoroutine(delayFocusMode(true));
         }
         else
@@ -59,6 +60,7 @@ public class CubeFace : MonoBehaviour
         if (facesHandler.isInFocusMode && Input.GetMouseButtonDown(1))
         {
             camera.SetActive(false);
+            facesHandler.ReactivateColliders();
             StartCoroutine(delayFocusMode(false));
         }
     }

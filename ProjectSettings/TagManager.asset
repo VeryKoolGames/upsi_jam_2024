@@ -12,6 +12,10 @@ TagManager:
   - face
   - PHUp
   - PHDown
+  - Base
+  - Star
+  - Constel
+  - StarsConst
   layers:
   - Default
   - TransparentFX
