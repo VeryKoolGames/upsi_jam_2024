@@ -14,6 +14,7 @@ public class CubeFace : MonoBehaviour
     public int id;
 
     void OnMouseEnter(){
+        if (!InputManager.Instance.inputEnabled) return;
         if (!facesHandler.isInFocusMode)
         {
             facesHandler.DeactivateOtherFaces(id);
@@ -21,21 +22,25 @@ public class CubeFace : MonoBehaviour
     }
      void OnMouseExit()
      {
+         if (!InputManager.Instance.inputEnabled) return;
+
         facesHandler.DeactivateFaces();
     }
      
     void OnMouseDown()
     {
+        if (!InputManager.Instance.inputEnabled) return;
         startTimer = true;
     }
 
     private void OnMouseUp()
     {
+        if (!InputManager.Instance.inputEnabled) return;
         startTimer = false;
         if (timePressed < .2f)
         {
-            facesHandler.isInFocusMode = true;
             camera.SetActive(true);
+            StartCoroutine(delayFocusMode(true));
         }
         else
         {
@@ -45,11 +50,7 @@ public class CubeFace : MonoBehaviour
     }
 
     void Update(){
-        // if(Input.GetMouseButtonDown(3) && facesHandler.isInFocusMode){
-        //     camera.SetActive(false);
-        //     facesHandler.isInFocusMode = false;
-        // }
-
+        if (!InputManager.Instance.inputEnabled) return;
         if (startTimer)
         {
             timePressed += Time.deltaTime;
@@ -58,8 +59,14 @@ public class CubeFace : MonoBehaviour
         if (facesHandler.isInFocusMode && Input.GetMouseButtonDown(1))
         {
             camera.SetActive(false);
-            facesHandler.isInFocusMode = false;
+            StartCoroutine(delayFocusMode(false));
         }
+    }
+
+    IEnumerator delayFocusMode(bool isFocus)
+    {
+        yield return new WaitForSeconds(1f);
+        facesHandler.isInFocusMode = isFocus;
     }
    
 }
