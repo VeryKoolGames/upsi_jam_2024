@@ -11,6 +11,7 @@ public class SelectFacesManager : MonoBehaviour
     [SerializeField] private GameObject[] faceFiveObjects;
     [SerializeField] private GameObject[] faceSixObjects;
     private Dictionary<int, GameObject[]> facesObjectsDict = new Dictionary<int, GameObject[]>();
+    public int currentPlayerState;
     
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class SelectFacesManager : MonoBehaviour
 
     public void ActivateFace(int faceId)
     {
+        if (faceId > currentPlayerState) return;
         GameObject[] objects = facesObjectsDict[faceId];
         foreach (var obj in objects)
         {
