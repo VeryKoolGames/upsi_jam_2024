@@ -14,6 +14,7 @@ public class CubeFace : MonoBehaviour
     public int id;
 
     void OnMouseEnter(){
+        if (!InputManager.Instance.inputEnabled) return;
         if (!facesHandler.isInFocusMode)
         {
             facesHandler.DeactivateOtherFaces(id);
@@ -21,16 +22,20 @@ public class CubeFace : MonoBehaviour
     }
      void OnMouseExit()
      {
+         if (!InputManager.Instance.inputEnabled) return;
+
         facesHandler.DeactivateFaces();
     }
      
     void OnMouseDown()
     {
+        if (!InputManager.Instance.inputEnabled) return;
         startTimer = true;
     }
 
     private void OnMouseUp()
     {
+        if (!InputManager.Instance.inputEnabled) return;
         startTimer = false;
         if (timePressed < .2f)
         {
@@ -45,7 +50,7 @@ public class CubeFace : MonoBehaviour
     }
 
     void Update(){
-
+        if (!InputManager.Instance.inputEnabled) return;
         if (startTimer)
         {
             timePressed += Time.deltaTime;
