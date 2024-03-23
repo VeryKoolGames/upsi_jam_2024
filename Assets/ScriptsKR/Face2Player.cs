@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Face2Player : MonoBehaviour
 {
     private GameObject _locker;
 
