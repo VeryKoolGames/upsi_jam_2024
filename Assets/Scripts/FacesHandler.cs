@@ -41,7 +41,7 @@ public class FacesHandler : MonoBehaviour
         {
             entry.Value.SetActive(false);
         }
-
+        
         // shouldActivateFaces = false;
     }
     
