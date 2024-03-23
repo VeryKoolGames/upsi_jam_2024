@@ -9,7 +9,7 @@ public class CubeFace : MonoBehaviour
     private float timePressed;
 
 
-    public GameObject camera;
+    public new GameObject camera;
     public FacesHandler facesHandler;
     public int id;
 
