@@ -11,6 +11,7 @@ public class CubeFace : MonoBehaviour
 
     public new GameObject camera;
     public FacesHandler facesHandler;
+    [SerializeField] private SelectFacesManager _selectFacesManager;
     public int id;
 
     void OnMouseEnter(){
@@ -41,6 +42,7 @@ public class CubeFace : MonoBehaviour
         {
             camera.SetActive(true);
             facesHandler.DeactivateColliders();
+            _selectFacesManager.ActivateFace(id);
             StartCoroutine(delayFocusMode(true));
         }
         else
@@ -61,7 +63,9 @@ public class CubeFace : MonoBehaviour
         {
             camera.SetActive(false);
             facesHandler.ReactivateColliders();
+            _selectFacesManager.DeactivateFace(id);
             StartCoroutine(delayFocusMode(false));
+            facesHandler.DeactivateOtherFaces(id);
         }
     }
 

@@ -15,7 +15,7 @@ public class RotateCube : MonoBehaviour
         if (!InputManager.Instance.inputEnabled) return;
         if (facesHandler.isInFocusMode) return;
         facesHandler.DeactivateFaces();
-        facesHandler.isInFocusMode = true;
+        // facesHandler.isInFocusMode = true;
         float rotx = Input.GetAxis("Mouse X") * PCRotationSpeed;
         float roty = Input.GetAxis("Mouse Y") * PCRotationSpeed;
         
