@@ -7,7 +7,7 @@ public class CubeFace : MonoBehaviour
     private bool isInFocusMode;
 
 
-    public GameObject camera;
+    public new GameObject camera;
     public FacesHandler facesHandler;
     public int id;
 
