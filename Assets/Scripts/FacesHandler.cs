@@ -44,4 +44,19 @@ public class FacesHandler : MonoBehaviour
 
         // shouldActivateFaces = false;
     }
+    
+    internal void ReactivateColliders()
+    {
+        foreach(KeyValuePair<int, GameObject> entry in faceDict)
+        {
+            entry.Value.GetComponentInParent<Collider>().enabled = true;
+        }
+    } 
+    internal void DeactivateColliders()
+    {
+        foreach(KeyValuePair<int, GameObject> entry in faceDict)
+        {
+            entry.Value.GetComponentInParent<Collider>().enabled = false;
+        }
+    } 
 }
