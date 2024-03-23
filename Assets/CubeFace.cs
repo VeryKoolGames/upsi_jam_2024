@@ -34,8 +34,8 @@ public class CubeFace : MonoBehaviour
         startTimer = false;
         if (timePressed < .2f)
         {
-            facesHandler.isInFocusMode = true;
             camera.SetActive(true);
+            StartCoroutine(delayFocusMode(true));
         }
         else
         {
@@ -45,10 +45,6 @@ public class CubeFace : MonoBehaviour
     }
 
     void Update(){
-        // if(Input.GetMouseButtonDown(3) && facesHandler.isInFocusMode){
-        //     camera.SetActive(false);
-        //     facesHandler.isInFocusMode = false;
-        // }
 
         if (startTimer)
         {
@@ -58,8 +54,14 @@ public class CubeFace : MonoBehaviour
         if (facesHandler.isInFocusMode && Input.GetMouseButtonDown(1))
         {
             camera.SetActive(false);
-            facesHandler.isInFocusMode = false;
+            StartCoroutine(delayFocusMode(false));
         }
+    }
+
+    IEnumerator delayFocusMode(bool isFocus)
+    {
+        yield return new WaitForSeconds(1f);
+        facesHandler.isInFocusMode = isFocus;
     }
    
 }
