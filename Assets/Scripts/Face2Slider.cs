@@ -34,9 +34,8 @@ public class Face2Slider : MonoBehaviour
 
     private void OnMouseDrag()
     {
-        Debug.Log("slidiiin");
         Vector3 camPos = Camera.main.ScreenToWorldPoint(Input.mousePosition - mousePosition);
-        if (camPos.x > transform.position.x)
+        // if (camPos.x > transform.position.x)
             
         if (gameObject.CompareTag("HSlider")
             && camPos.x < transform.position.x
