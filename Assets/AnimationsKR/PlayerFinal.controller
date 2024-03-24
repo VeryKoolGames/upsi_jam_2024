@@ -55,7 +55,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 3663099457713662999}
-    m_Position: {x: 330, y: 30, z: 0}
+    m_Position: {x: 300, y: 10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8889222655829411496}
     m_Position: {x: 330, y: 100, z: 0}
@@ -70,13 +70,13 @@ AnimatorStateMachine:
     m_Position: {x: 580, y: 200, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6520725393864223912}
-    m_Position: {x: 730, y: 120, z: 0}
+    m_Position: {x: 790, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3487728941393156038}
-    m_Position: {x: 780, y: 20, z: 0}
+    m_Position: {x: 810, y: 20, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3024860873627320002}
-    m_Position: {x: 710, y: -80, z: 0}
+    m_Position: {x: 810, y: -80, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -255,25 +255,25 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: F2G1
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: F2G2
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: F2G3
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
