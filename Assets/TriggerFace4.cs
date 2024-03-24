@@ -10,6 +10,7 @@ public class TriggerFace4 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("PLAYER DETECTED");
         if (other.CompareTag("Player"))
         {
             StartCoroutine(activateCanvas());
