@@ -23,6 +23,7 @@ TagManager:
   - ZSliderDown
   - ZSliderUp
   - F3Plane
+  - BodyPlayer
   layers:
   - Default
   - TransparentFX
