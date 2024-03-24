@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6190903268527001184}
   - component: {fileID: 8835364073083746953}
   - component: {fileID: 865005436732729970}
+  - component: {fileID: 5350607622936308588}
   m_Layer: 0
   m_Name: Body
   m_TagString: Player
@@ -105,6 +106,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5350607622936308588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557509126559344155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726f8c34929704d5e9d382a4f11ee299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockerAnim: {fileID: 3098300807211223952}
+  F2G3slider: {fileID: 0}
 --- !u!1 &1085867243592648216
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +258,7 @@ Transform:
   - {fileID: 1636065585012411574}
   - {fileID: 4321647820779819324}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -41.62781, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!95 &3098300807211223952
 Animator:
   serializedVersion: 5
