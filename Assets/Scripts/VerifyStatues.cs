@@ -8,6 +8,7 @@ public class VerifyStatues : MonoBehaviour
     [SerializeField] private Orientation[] correctOrientations;
     [SerializeField] private StatueRotationHandler[] statuesObject;
     [SerializeField] private GameObject _doorStatuesHandler;
+    [SerializeField] private AudioSource passedSound;
     
     public void VerifyStatuesOrientation()
     {
@@ -23,6 +24,7 @@ public class VerifyStatues : MonoBehaviour
         if (correctCount == statuesObject.Length)
         {
             _doorStatuesHandler.GetComponent<Collider>().enabled = true;
+            passedSound.Play();
         }
     }
 }
