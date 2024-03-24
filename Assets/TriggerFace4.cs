@@ -21,7 +21,7 @@ public class TriggerFace4 : MonoBehaviour
     IEnumerator activateCanvas()
     {
         canvasFace4.SetActive(true);
-        yield return new WaitForSeconds(16f);
+        yield return new WaitForSeconds(22f);
         canvasFace4.SetActive(false);
     }
 }
