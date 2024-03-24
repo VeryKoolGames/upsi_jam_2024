@@ -5,9 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
+    public Animator FadeAnim;
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        FadeAnim.SetTrigger("FadeOut");
+        StartCoroutine(waitForStart());
+        
     }
     
     public void StartCredits()
@@ -18,6 +21,12 @@ public class StartMenu : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    IEnumerator waitForStart(){
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        
     }
 
 }
