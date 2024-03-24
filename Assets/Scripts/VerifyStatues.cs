@@ -7,6 +7,7 @@ public class VerifyStatues : MonoBehaviour
 {
     [SerializeField] private Orientation[] correctOrientations;
     [SerializeField] private StatueRotationHandler[] statuesObject;
+    [SerializeField] private GameObject _doorStatuesHandler;
     
     public void VerifyStatuesOrientation()
     {
@@ -21,7 +22,7 @@ public class VerifyStatues : MonoBehaviour
 
         if (correctCount == statuesObject.Length)
         {
-            Debug.Log("Coooorect");
+            _doorStatuesHandler.GetComponent<Collider>().enabled = true;
         }
     }
 }

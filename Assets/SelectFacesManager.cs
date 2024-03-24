@@ -26,7 +26,6 @@ public class SelectFacesManager : MonoBehaviour
 
     public void ActivateFace(int faceId)
     {
-        if (faceId > currentPlayerState) return;
         GameObject[] objects = facesObjectsDict[faceId];
         foreach (var obj in objects)
         {

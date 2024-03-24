@@ -40,7 +40,7 @@ public class StatueRotationHandler : MonoBehaviour
                 StartCoroutine(FadeOutCoroutine(1f));
             }
 
-            transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
+            transform.Rotate(Vector3.back * rotationSpeed * Time.deltaTime);
         }
     }
 

@@ -9,9 +9,24 @@ public class StatueHandler : MonoBehaviour
     private GameObject statueCanvas;
     [SerializeField]
     private string correctWord;
+    [SerializeField]
+    private Animator statueAnimator;
+    [SerializeField]
+    private Animator playerAnim;
+
+    private bool isCanvasActive;
     private void OnMouseDown()
     {
-        statueCanvas.SetActive(true);
+        if (isCanvasActive)
+        {
+            statueCanvas.SetActive(false);
+            isCanvasActive = false;
+        }
+        else
+        {
+            statueCanvas.SetActive(true);
+            isCanvasActive = true;
+        }
     }
 
     public void CloseCanvas()
@@ -23,11 +38,19 @@ public class StatueHandler : MonoBehaviour
     {
         if (input == correctWord)
         {
-            Debug.Log("Found the right word");
+            statueAnimator.SetTrigger("moveChaman");
+            CloseCanvas();
+            StartCoroutine(StartPlayerAnim());
         }
         else
         {
             Debug.Log("Maybe warn the player he was wrong");
         }
+    }
+
+    IEnumerator StartPlayerAnim()
+    {
+        yield return new WaitForSeconds(2f);
+        playerAnim.SetBool("F5G1", value:true);
     }
 }
