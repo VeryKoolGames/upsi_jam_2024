@@ -16,7 +16,7 @@ public class Face2LockerNumber : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("BodyPlayer");
     }
 
     public void numPlus()

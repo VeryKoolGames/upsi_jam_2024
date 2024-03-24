@@ -38,6 +38,7 @@ public class Face2Slider : MonoBehaviour
         {
             Debug.Log("Gate" + triggerName + "Up");
             playerAnim.SetBool(triggerName, true);
+            transform.GetComponent<Collider>().enabled = false;
         }
     }
 }
