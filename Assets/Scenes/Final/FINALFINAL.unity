@@ -2343,6 +2343,7 @@ MonoBehaviour:
   camera: {fileID: 56820823}
   facesHandler: {fileID: 493020973}
   _selectFacesManager: {fileID: 1901641507}
+  chamanCanvas: {fileID: 521245131}
   id: 3
 --- !u!95 &359649077
 Animator:
@@ -2463,6 +2464,7 @@ MonoBehaviour:
   camera: {fileID: 819354546}
   facesHandler: {fileID: 493020973}
   _selectFacesManager: {fileID: 1901641507}
+  chamanCanvas: {fileID: 521245131}
   id: 1
 --- !u!95 &361180350
 Animator:
@@ -4250,6 +4252,11 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1627679831438927104, guid: cc58738e12a844f37b29675ef1d0d25a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1848272716989405854, guid: cc58738e12a844f37b29675ef1d0d25a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4318,12 +4325,24 @@ PrefabInstance:
     - target: {fileID: 6612743838469959635, guid: cc58738e12a844f37b29675ef1d0d25a,
         type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1627679831438927104, guid: cc58738e12a844f37b29675ef1d0d25a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 856362645}
+    - targetCorrespondingSourceObject: {fileID: 1627679831438927104, guid: cc58738e12a844f37b29675ef1d0d25a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 856362644}
+    - targetCorrespondingSourceObject: {fileID: 1627679831438927104, guid: cc58738e12a844f37b29675ef1d0d25a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 856362643}
   m_SourcePrefab: {fileID: 100100000, guid: cc58738e12a844f37b29675ef1d0d25a, type: 3}
 --- !u!1 &605509477
 GameObject:
@@ -10178,6 +10197,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &856362639 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1627679831438927104, guid: cc58738e12a844f37b29675ef1d0d25a,
+    type: 3}
+  m_PrefabInstance: {fileID: 581442132}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &856362643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856362639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726f8c34929704d5e9d382a4f11ee299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockerAnim: {fileID: 66608417}
+  F2G3slider: {fileID: 1950327612}
+--- !u!54 &856362644
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856362639}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &856362645
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856362639}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.020000005, y: 0.020000005, z: 0.027913958}
+  m_Center: {x: 0, y: 1.1246393e-16, z: 0.003956967}
 --- !u!1 &873502580
 GameObject:
   m_ObjectHideFlags: 0
@@ -15752,6 +15839,7 @@ MonoBehaviour:
   camera: {fileID: 2107860734}
   facesHandler: {fileID: 493020973}
   _selectFacesManager: {fileID: 1901641507}
+  chamanCanvas: {fileID: 521245131}
   id: 4
 --- !u!95 &1438021625
 Animator:
@@ -16456,6 +16544,7 @@ MonoBehaviour:
   camera: {fileID: 1470890131}
   facesHandler: {fileID: 493020973}
   _selectFacesManager: {fileID: 1901641507}
+  chamanCanvas: {fileID: 521245131}
   id: 2
 --- !u!95 &1500551174
 Animator:
@@ -20240,6 +20329,7 @@ MonoBehaviour:
   camera: {fileID: 1578628520}
   facesHandler: {fileID: 493020973}
   _selectFacesManager: {fileID: 1901641507}
+  chamanCanvas: {fileID: 521245131}
   id: 5
 --- !u!95 &1944637465
 Animator:
@@ -21577,6 +21667,7 @@ MonoBehaviour:
   camera: {fileID: 1527441419}
   facesHandler: {fileID: 493020973}
   _selectFacesManager: {fileID: 1901641507}
+  chamanCanvas: {fileID: 521245131}
   id: 0
 --- !u!95 &2121960176
 Animator:
@@ -36269,7 +36360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statueCanvas: {fileID: 521245131}
-  correctWord: table
+  correctWord: sesame
   statueAnimator: {fileID: 8725508221835188140}
   playerAnim: {fileID: 1455239078}
 --- !u!114 &8725508221835188137

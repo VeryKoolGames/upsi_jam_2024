@@ -10,12 +10,12 @@ public class IntroManagerScript : MonoBehaviour
     
     void Start(){
         StartCoroutine(endIntro());
-
-        
     }
 
     IEnumerator endIntro(){
+        InputManager.Instance.inputEnabled = false;
         yield return new WaitForSeconds(12);
+        InputManager.Instance.inputEnabled = true;
         cubeAnimator.enabled = false;
         cameraAnimator.enabled = false;
     }
