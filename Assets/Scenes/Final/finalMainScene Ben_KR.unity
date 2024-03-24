@@ -699,6 +699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 56820823}
   facesHandler: {fileID: 493020973}
+  _selectFacesManager: {fileID: 0}
   id: 3
 --- !u!95 &359649077
 Animator:
@@ -818,6 +819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 819354546}
   facesHandler: {fileID: 493020973}
+  _selectFacesManager: {fileID: 0}
   id: 1
 --- !u!95 &361180350
 Animator:
@@ -1806,6 +1808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 2107860734}
   facesHandler: {fileID: 493020973}
+  _selectFacesManager: {fileID: 0}
   id: 4
 --- !u!95 &1438021625
 Animator:
@@ -1997,6 +2000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 1470890131}
   facesHandler: {fileID: 493020973}
+  _selectFacesManager: {fileID: 0}
   id: 2
 --- !u!95 &1500551174
 Animator:
@@ -2734,6 +2738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 1578628520}
   facesHandler: {fileID: 493020973}
+  _selectFacesManager: {fileID: 0}
   id: 5
 --- !u!95 &1944637465
 Animator:
@@ -3250,6 +3255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 1527441419}
   facesHandler: {fileID: 493020973}
+  _selectFacesManager: {fileID: 0}
   id: 0
 --- !u!95 &2121960176
 Animator:

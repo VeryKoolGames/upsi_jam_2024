@@ -9,7 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Zoom
+    m_ConditionEvent: zoom
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 209731616239311933}
@@ -62,7 +62,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Complete
+    m_ConditionEvent: complete
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8128492417349999202}
@@ -87,13 +87,13 @@ AnimatorController:
   m_Name: Locker
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Zoom
+  - m_Name: zoom
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: Complete
+  - m_Name: complete
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0

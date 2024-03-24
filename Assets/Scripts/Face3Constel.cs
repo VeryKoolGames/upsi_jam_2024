@@ -6,7 +6,9 @@ using UnityEngine;
 public class Face3Constel : MonoBehaviour
 {
     [SerializeField] private GameObject[] baseArray = new GameObject[20];
+    [SerializeField] private GameObject F3G1slider; // https://www.youtube.com/watch?v=JS4k_lwmZHk
     private int nMatch = 0;
+    private GameObject[] starsConstList;
 
     public void checkTotalMatches()
     {
@@ -19,6 +21,13 @@ public class Face3Constel : MonoBehaviour
         }
         Debug.Log("Matches number = " + nMatch);
         if (nMatch == 20)
+        {
             Debug.Log("FACE 3 COMPLETED, CONGRATS 🎉");
+            F3G1slider.GetComponent<Collider>().enabled = true;
+            GetComponent<AudioSource>().Play();
+            starsConstList = GameObject.FindGameObjectsWithTag("StarsConst");
+            foreach (GameObject starsConst in starsConstList)
+                starsConst.GetComponent<Collider>().enabled = false;
+        }
     }
 }
