@@ -12,6 +12,7 @@ public class CubeFace : MonoBehaviour
     public new GameObject camera;
     public FacesHandler facesHandler;
     [SerializeField] private SelectFacesManager _selectFacesManager;
+    [SerializeField] private GameObject chamanObject;
     public int id;
 
     void OnMouseEnter(){
@@ -62,6 +63,7 @@ public class CubeFace : MonoBehaviour
         if (facesHandler.isInFocusMode && Input.GetMouseButtonDown(1))
         {
             camera.SetActive(false);
+            chamanObject.SetActive(false);
             facesHandler.ReactivateColliders();
             _selectFacesManager.DeactivateFace(id);
             StartCoroutine(delayFocusMode(false));

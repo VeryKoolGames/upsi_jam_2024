@@ -50,7 +50,9 @@ public class StatueHandler : MonoBehaviour
 
     IEnumerator StartPlayerAnim()
     {
+        GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(2f);
+        GetComponent<AudioSource>().Stop();
         playerAnim.SetBool("F5G1", value:true);
     }
 }
