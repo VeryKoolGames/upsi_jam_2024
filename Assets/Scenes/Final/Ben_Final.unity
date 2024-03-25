@@ -1912,6 +1912,7 @@ MonoBehaviour:
   camera: {fileID: 56820823}
   facesHandler: {fileID: 493020973}
   _selectFacesManager: {fileID: 1901641507}
+  chamanCanvas: {fileID: 0}
   id: 3
 --- !u!95 &359649077
 Animator:
@@ -2032,6 +2033,7 @@ MonoBehaviour:
   camera: {fileID: 819354546}
   facesHandler: {fileID: 493020973}
   _selectFacesManager: {fileID: 1901641507}
+  chamanCanvas: {fileID: 0}
   id: 1
 --- !u!95 &361180350
 Animator:
@@ -8273,7 +8275,7 @@ Transform:
   m_GameObject: {fileID: 618823493}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
-  m_LocalPosition: {x: 0.333, y: -0.07929603, z: -0.89739764}
+  m_LocalPosition: {x: 0.333, y: -0.079, z: -0.797}
   m_LocalScale: {x: 0.04651987, y: 0.046519857, z: 0.046519868}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9939,7 +9941,7 @@ Transform:
   m_GameObject: {fileID: 949777600}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
-  m_LocalPosition: {x: -0.073, y: -0.07929603, z: -0.89739764}
+  m_LocalPosition: {x: -0.073, y: -0.079, z: -0.797}
   m_LocalScale: {x: 0.04651987, y: 0.046519857, z: 0.046519868}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10569,7 +10571,7 @@ Transform:
   m_GameObject: {fileID: 1101704846}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
-  m_LocalPosition: {x: -0.348, y: -0.07929603, z: -0.89739764}
+  m_LocalPosition: {x: -0.348, y: -0.079, z: -0.797}
   m_LocalScale: {x: 0.04651987, y: 0.046519857, z: 0.046519868}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11442,7 +11444,7 @@ Transform:
   m_GameObject: {fileID: 1231944444}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
-  m_LocalPosition: {x: 0.197, y: -0.07929603, z: -0.89739764}
+  m_LocalPosition: {x: 0.197, y: -0.079, z: -0.797}
   m_LocalScale: {x: 0.04651987, y: 0.046519857, z: 0.046519868}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11930,7 +11932,7 @@ Transform:
   m_GameObject: {fileID: 1316210615}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
-  m_LocalPosition: {x: 0.062, y: -0.07929603, z: -0.89739764}
+  m_LocalPosition: {x: 0.062, y: -0.079, z: -0.797}
   m_LocalScale: {x: 0.04651987, y: 0.046519857, z: 0.046519868}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12698,6 +12700,7 @@ MonoBehaviour:
   camera: {fileID: 2107860734}
   facesHandler: {fileID: 493020973}
   _selectFacesManager: {fileID: 1901641507}
+  chamanCanvas: {fileID: 0}
   id: 4
 --- !u!95 &1438021625
 Animator:
@@ -13306,6 +13309,7 @@ MonoBehaviour:
   camera: {fileID: 1470890131}
   facesHandler: {fileID: 493020973}
   _selectFacesManager: {fileID: 1901641507}
+  chamanCanvas: {fileID: 0}
   id: 2
 --- !u!95 &1500551174
 Animator:
@@ -14889,7 +14893,7 @@ Transform:
   m_GameObject: {fileID: 1753372696}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: -1}
-  m_LocalPosition: {x: -0.209, y: -0.07929603, z: -0.89739764}
+  m_LocalPosition: {x: -0.209, y: -0.079, z: -0.797}
   m_LocalScale: {x: 0.04651987, y: 0.046519857, z: 0.046519868}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16319,6 +16323,7 @@ MonoBehaviour:
   camera: {fileID: 1578628520}
   facesHandler: {fileID: 493020973}
   _selectFacesManager: {fileID: 1901641507}
+  chamanCanvas: {fileID: 0}
   id: 5
 --- !u!95 &1944637465
 Animator:
@@ -17542,6 +17547,7 @@ MonoBehaviour:
   camera: {fileID: 1527441419}
   facesHandler: {fileID: 493020973}
   _selectFacesManager: {fileID: 1901641507}
+  chamanCanvas: {fileID: 0}
   id: 0
 --- !u!95 &2121960176
 Animator:
