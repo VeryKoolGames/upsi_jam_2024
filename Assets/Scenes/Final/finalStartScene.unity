@@ -3040,6 +3040,7 @@ MonoBehaviour:
   camera: {fileID: 1309143858}
   facesHandler: {fileID: 0}
   _selectFacesManager: {fileID: 0}
+  chamanCanvas: {fileID: 0}
   id: 2
 --- !u!65 &265223137
 BoxCollider:
@@ -10228,6 +10229,7 @@ MonoBehaviour:
   camera: {fileID: 1149284630}
   facesHandler: {fileID: 0}
   _selectFacesManager: {fileID: 0}
+  chamanCanvas: {fileID: 0}
   id: 3
 --- !u!65 &545732884
 BoxCollider:
@@ -10420,6 +10422,7 @@ MonoBehaviour:
   camera: {fileID: 514825522}
   facesHandler: {fileID: 0}
   _selectFacesManager: {fileID: 0}
+  chamanCanvas: {fileID: 0}
   id: 0
 --- !u!65 &575267734
 BoxCollider:
@@ -11434,6 +11437,7 @@ MonoBehaviour:
   camera: {fileID: 1532813530}
   facesHandler: {fileID: 0}
   _selectFacesManager: {fileID: 0}
+  chamanCanvas: {fileID: 0}
   id: 1
 --- !u!65 &707987666
 BoxCollider:
@@ -14470,6 +14474,7 @@ MonoBehaviour:
   camera: {fileID: 558878830}
   facesHandler: {fileID: 0}
   _selectFacesManager: {fileID: 0}
+  chamanCanvas: {fileID: 0}
   id: 5
 --- !u!65 &990333516
 BoxCollider:
@@ -18978,6 +18983,7 @@ MonoBehaviour:
   camera: {fileID: 102518774}
   facesHandler: {fileID: 0}
   _selectFacesManager: {fileID: 0}
+  chamanCanvas: {fileID: 0}
   id: 4
 --- !u!65 &1494165534
 BoxCollider:
@@ -22769,7 +22775,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Galactic Room
+  m_text: CosmiCube
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1085cd2fc2bcd4c65a54357e93193fe6, type: 2}
   m_sharedMaterial: {fileID: 2689493560465664537, guid: 1085cd2fc2bcd4c65a54357e93193fe6,
@@ -24185,7 +24191,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1424107577}
         m_TargetAssemblyTypeName: StartMenu, Assembly-CSharp
-        m_MethodName: StartGame
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
