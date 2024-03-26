@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/finalStartScene.unity
     guid: 3b1d831a910174d88b02c68bcc500c4e
   - enabled: 1
-    path: Assets/Scenes/Final/FINALFINAL.unity
-    guid: 768d6841c52164b5f9a6bff79952f6c4
+    path: Assets/Scenes/Final/BEN_Polish.unity
+    guid: a2d45b4ffc25b4f4e983f62dda8a3929
   m_configObjects: {}
