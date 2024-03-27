@@ -14,6 +14,9 @@ public class StatueHandler : MonoBehaviour
     [SerializeField]
     private Animator playerAnim;
 
+    public GameObject outro;
+    public GameObject particles;
+
     private bool isCanvasActive;
     private void OnMouseDown()
     {
@@ -41,6 +44,8 @@ public class StatueHandler : MonoBehaviour
             statueAnimator.SetTrigger("moveChaman");
             CloseCanvas();
             StartCoroutine(StartPlayerAnim());
+            particles.SetActive(true);
+
         }
         else
         {
@@ -52,5 +57,6 @@ public class StatueHandler : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         playerAnim.SetBool("F5G1", value:true);
+        outro.SetActive(true);
     }
 }
