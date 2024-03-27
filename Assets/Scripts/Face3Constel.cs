@@ -10,6 +10,8 @@ public class Face3Constel : MonoBehaviour
     private int nMatch = 0;
     private GameObject[] starsConstList;
 
+    public GameObject particles;
+
     public void checkTotalMatches()
     {
         nMatch = 0;
@@ -26,6 +28,7 @@ public class Face3Constel : MonoBehaviour
             F3G1slider.GetComponent<Collider>().enabled = true;
             GetComponent<AudioSource>().Play();
             starsConstList = GameObject.FindGameObjectsWithTag("StarsConst");
+            particles.SetActive(true);
             foreach (GameObject starsConst in starsConstList)
                 starsConst.GetComponent<Collider>().enabled = false;
         }

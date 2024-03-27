@@ -9,6 +9,8 @@ public class VerifyStatues : MonoBehaviour
     [SerializeField] private StatueRotationHandler[] statuesObject;
     [SerializeField] private GameObject _doorStatuesHandler;
     [SerializeField] private AudioSource passedSound;
+
+    public GameObject particles;
     
     public void VerifyStatuesOrientation()
     {
@@ -25,6 +27,7 @@ public class VerifyStatues : MonoBehaviour
         {
             _doorStatuesHandler.GetComponent<Collider>().enabled = true;
             passedSound.Play();
+            particles.SetActive(true);
         }
     }
 }
