@@ -14,6 +14,6 @@ public class BackToMainMenu : MonoBehaviour
 
     IEnumerator waitForCutscene(){
         yield return new WaitForSeconds(21);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
